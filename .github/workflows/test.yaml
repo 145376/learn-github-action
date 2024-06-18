@@ -1,0 +1,11 @@
+name: learn-workflow
+run-name: ${{ github.actor }} is learning
+on: [push]
+jobs: 
+  first-job:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: test script
+        run: node index.js
+        env: 
+          ENV: development
