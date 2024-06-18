@@ -4,6 +4,9 @@ on: [push]
 jobs: 
   first-job:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./
     steps: 
       - name: test script
         run: node index.js
